@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title%}
+Contact
+{% endblock%}
+
+{% load static %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    {% block content%}
+<div class="col-md-3 ">
+    <div class="footer-secondsection">
+      <div class="footer-text2">
+        <p>Contacts</p>
+      </div>
+      <div class="details">
+        <ul>
+          <li><a href="#">192 Newyork </a></li>
+          <li><a href="#">Support </a></li>
+          <li><a href="#">+1125156363</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col md-12">
+    <div class="copy-right">
+      <p>Copyright 2020@ all right</p>
+    </div>
+  </div>
+</div>
+{% endblock%}
+
+    
+    <script src="" async defer></script>
+  </body>
+</html>

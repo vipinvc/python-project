@@ -1,3 +1,17 @@
 .text-block p{
-    background-color: brown !important;
+    color:grey;
+    font-size: medium;
+    font-weight: bold;
+}
+.details a{
+    color: #6A6B6C;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height:29px 
+
+}
+.copy-right{
+    display: flex;
+    justify-content: center;
 }
