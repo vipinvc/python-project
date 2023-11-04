@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% load static%}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% block title%}About{% endblock %}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>  
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    {% block content%}
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 text-block">
+            <h1>
+            <span class="mentor">Expert</span> Opinion<br> From your favorite<br>Doctors
+            </h1>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text.<br> It has roots in a piece of classical
+              Latin literature from 45 BC,</p>
+            <button class="button login"><a href="{% url 'home' %}">Back to Home</a></button>
+          </div>
+          <div class="col-sm-6 image-block">
+            <img class="cute-girl"
+              src="{% static '/images/doctor2.jpg'%}">
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endblock%}
+    
+    <script src="" async defer></script>
+  </body>
+</html>
+

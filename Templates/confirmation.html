@@ -1,0 +1,53 @@
+
+{% extends 'base.html' %}
+{% block title%}
+ confirmation
+{% endblock%}
+
+{% load static%}
+
+{% comment %} {% block content%}
+<div 'container alerting'>
+<h1>confirmation</home>
+  <div class="alert alert-success" role="alert">
+        booked successfully!
+  </div>   
+
+</div>
+{% endblock%} {% endcomment %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css'%}"/> 
+  </head>
+  <body>
+    {% block content%}
+    
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 text-block">
+            <h1>
+            <span class="mentor">HI</span>
+            </h1>
+            <p>Slot Booked Successfully<br> Thankyou.</p>
+            <button class="button login"><a href="{% url 'home' %}">Back To Home</a></button>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script src="" async defer></script>
+  </body>
+   
+    {% endblock%}
+    
+    <script src="" async defer></script>
+  </body>
+</html>
